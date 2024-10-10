@@ -1,51 +1,127 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+<!-- <!DOCTYPE html> tells the browser to render the page in standards mode. It defines the document as an HTML5 document. -->
+
 <html>
+<!-- <html> is the root element of an HTML page, enclosing all content on the page. -->
 
 <head>
+  <!-- <head> contains metadata (information about the document), such as the title, character set, and links to external resources like CSS or JavaScript files. -->
+
   <title>Brown Bears</title>
+  <!-- <title> sets the title of the web page that appears in the browser tab. It does not appear on the actual webpage. -->
 </head>
 
 <body>
+  <!-- <body> contains the visible content of the webpage. Everything displayed on the page must be placed inside the <body> tag. -->
+
   <a href="./index.html">Brown Bear</a>
+  <!-- <a> defines a hyperlink. The "href" attribute specifies the link destination. "./index.html" refers to a local file in the same directory. -->
+
   <a href="./aboutme.html">About Me</a>
+  <!-- Another anchor (<a>) element that links to another local HTML file called "aboutme.html". -->
+
   <h1>The Brown Bear</h1>
-    <ul>
+  <!-- <h1> is a heading element. It is used for the most important heading on the page. This is typically the largest text on the page. -->
+
+  <ul>
+    <!-- <ul> stands for "unordered list", which creates a bulleted list of items. -->
+
     <li><a href="#introduction">Introduction</a></li>
+    <!-- <li> defines a list item inside the unordered list (<ul>). Each <li> contains an <a> element linking to a section with the id "introduction". -->
+
     <li><a href="#habitat">Habitat</a></li>
+    <!-- The <a> (anchor) element links to the section of the page with the id "habitat". -->
+
     <li><a href="#media">Media</a></li>
+    <!-- Another <li> with an anchor that links to the "media" section on the page. -->
+
     <li><a href="#habitat">Habi2</a></li>
-    </ul>
+    <!-- Another <li> linking to the same "habitat" section as earlier. This may be a duplicate link. -->
+  </ul>
+
   <div id="introduction">
+    <!-- <div> is a generic container for grouping elements. The id "introduction" allows this section to be targeted by CSS or JavaScript, and also by anchor links. -->
+
     <h2>About Brown Bears</h2>
+    <!-- <h2> is a second-level heading, smaller than <h1>. It is used for sub-sections within the page. -->
+
     <p>The brown bear (<em>Ursus arctos</em>) is native to parts of northern Eurasia and North America. Its conservation status is currently <strong>Least Concern</strong>.<br /><br /> There are many subspecies within the brown bear species, including the
       Atlas bear and the Himalayan brown bear.</p>
+    <!-- <p> defines a paragraph of text. 
+         <em> is used to italicize text, typically for emphasis or marking scientific names.
+         <strong> is used to bold text, marking it as important.
+         <br /> creates a line break, forcing the next content to appear on a new line. -->
+
     <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">Learn More</a>
+    <!-- Another anchor element. This link opens the Wikipedia page about brown bears in a new tab due to the "target="_blank" attribute. -->
+
     <h3>Species</h3>
+    <!-- <h3> is a third-level heading, smaller than <h2>. It is used for sub-sections under <h2>. -->
+
     <ul>
+      <!-- A new unordered list (<ul>), containing specific species of brown bears. -->
+
       <li>Arctos</li>
       <li>Collarus</li>
       <li>Horribilis</li>
       <li>Nelsoni (extinct)</li>
+      <!-- Each <li> defines a species in the unordered list. -->
     </ul>
+
     <h3>Features</h3>
+    <!-- Another third-level heading <h3> for a new sub-section about features. -->
+
     <p>Brown bears are not always completely brown. Some can be reddish or yellowish. They have very large, curved claws and huge paws. Male brown bears are often 30% larger than female brown bears. They can range from 5 feet to 9 feet from head to toe.</p>
+    <!-- A paragraph (<p>) that describes brown bear features. -->
   </div>
+
   <div id="habitat">
+    <!-- A new <div> section with the id "habitat". This section contains information about the habitat of brown bears. -->
+
     <h2>Habitat</h2>
+    <!-- Another second-level heading (<h2>) for the habitat section. -->
+
     <h3>Countries with Large Brown Bear Populations</h3>
+    <!-- A third-level heading (<h3>) for sub-section about countries with large populations. -->
+
     <ol>
+      <!-- <ol> is an ordered list, which creates a numbered list. -->
+
       <li>Russia</li>
       <li>United States</li>
       <li>Canada</li>
+      <!-- Each <li> is a list item representing countries with large brown bear populations. -->
     </ol>
+
     <h3>Countries with Small Brown Bear Populations</h3>
+    <!-- Another third-level heading (<h3>) for countries with smaller populations. -->
+
     <p>Some countries with smaller brown bear populations include Armenia, Belarus, Bulgaria, China, Finland, France, Greece, India, Japan, Nepal, Poland, Romania, Slovenia, Turkmenistan, and Uzbekistan.</p>
+    <!-- A paragraph (<p>) that lists countries with smaller populations. -->
   </div>
+
   <div id="media">
+    <!-- A <div> with the id "media" for a section that contains media-related content (image and video). -->
+
     <h2>Media</h2>
-    <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank"><img src="https://content.codecademy.com/courses/web-101/web101-image_brownbear.jpg"/></a>
-    <video src="https://content.codecademy.com/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4" height="240" width="320" controls>Video not supported</video>
+    <!-- A second-level heading for the media section. -->
+
+    <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">
+      <!-- A link wrapping around an image to make the image clickable. The link directs to the Wikipedia page about brown bears. -->
+
+      <img src="https://content.codecademy.com/courses/web-101/web101-image_brownbear.jpg"/>
+      <!-- <img> defines an image. The "src" attribute specifies the image source URL. -->
+    </a>
+
+    <video src="https://content.codecademy.com/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4" height="240" width="320" controls>
+      <!-- <video> embeds a video. The "src" attribute specifies the video file, and the "controls" attribute allows the user to play, pause, and control the volume. -->
+
+      Video not supported
+      <!-- Fallback text that appears if the browser cannot play the video. -->
+    </video>
   </div>
 </body>
+<!-- The closing </body> tag ends the visible content of the HTML page. -->
 
 </html>
+<!-- The closing </html> tag ends the HTML document. -->
