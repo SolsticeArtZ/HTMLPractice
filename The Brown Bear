@@ -1,34 +1,79 @@
 <body>
+  <!-- <body> defines the main content of the HTML document -->
+
   <h1>The Brown Bear</h1>
+  <!-- <h1> is a heading element, used for the main heading of the page -->
+
   <div id="introduction">
+    <!-- <div> is a container used to group content and apply styles or scripts to that section -->
+    
     <h2>About Brown Bears</h2>
+    <!-- <h2> is a heading element, used for secondary headings in the document -->
+
     <p>The brown bear (<em>Ursus arctos</em>) is native to parts of northern Eurasia and North America. Its conservation status is currently <strong>Least Concern</strong>.<br /><br /> There are many subspecies within the brown bear species, including the Atlas bear and the Himalayan brown bear.</p>
+    <!-- <p> is a paragraph element, used for displaying blocks of text -->
+    <!-- <em> is used to italicize text, typically for emphasis -->
+    <!-- <strong> is used to bold text for importance -->
+    <!-- <br /> is a line break, used to create a new line without starting a new paragraph -->
+
     <h3>Species</h3>
+    <!-- <h3> is a subheading element, used for subsections under <h2> or <h1> -->
+
     <ul>
+      <!-- <ul> defines an unordered (bulleted) list -->
+
       <li>Arctos</li>
       <li>Collarus</li>
       <li>Horribilis</li>
       <li>Nelsoni (extinct)</li>
+      <!-- <li> defines a list item within a list (either <ul> or <ol>) -->
     </ul>
+
     <h3>Features</h3>
+    <!-- <h3> is another subheading element -->
+
     <p>Brown bears are not always completely brown. Some can be reddish or yellowish. They have very large, curved claws and huge paws. Male brown bears are often 30% larger than female brown bears. They can range from 5 feet to 9 feet from head to toe.</p>
+    <!-- Another <p> paragraph element -->
   </div>
+
   <div id="habitat">
+    <!-- <div> with an id attribute that uniquely identifies this section as "habitat" -->
+
     <h2>Habitat</h2>
+    <!-- <h2> used for a secondary section heading -->
+
     <h3>Countries with Large Brown Bear Populations</h3>
+    <!-- <h3> subheading for this subsection -->
+
     <ol>
+      <!-- <ol> defines an ordered (numbered) list -->
+
       <li>Russia</li>
       <li>United States</li>
       <li>Canada</li>
+      <!-- <li> list items in the ordered list -->
     </ol>
+
     <h3>Countries with Small Brown Bear Populations</h3>
+    <!-- <h3> subheading for this subsection -->
+
     <p>Some countries with smaller brown bear populations include Armenia, Belarus, Bulgaria, China, Finland, France, Greece, India, Japan, Nepal, Poland, Romania, Slovenia, Turkmenistan, and Uzbekistan.</p>
+    <!-- <p> paragraph element for text -->
   </div>
+
   <div id="media">
+    <!-- <div> with an id attribute that uniquely identifies this section as "media" -->
+
     <h2>Media</h2>
+    <!-- <h2> heading for this media section -->
+
     <img src="https://content.codecademy.com/courses/web-101/web101-image_brownbear.jpg" alt="A Brown Bear"/>
+    <!-- <img> defines an image. The "src" attribute specifies the image source, and "alt" provides alternative text for accessibility -->
+    
     <video src="https://content.codecademy.com/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4" width="320" height="240" controls alt="Video not supported">
-  Video not supported
-</video>  
+      <!-- <video> defines a video player. The "src" attribute specifies the video source, "controls" adds playback controls like play and pause, and the "alt" provides fallback text for unsupported browsers -->
+      Video not supported
+    </video>  
   </div>
 </body>
+<!-- </body> closes the main content of the HTML document -->
